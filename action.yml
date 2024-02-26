@@ -1,0 +1,18 @@
+name: "Mattermost Notification by bash"
+description: "Simple and fast mattermost notifier"
+inputs:
+  webhook_url:
+    description: "Mattermost webhook url"
+    required: true
+  message:
+    description: "Text that you want to send"
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Send mattermost notification
+      run: ${{ github.action_path }}/notify.sh
+      shell: bash
+      env:
+        WEBHOOK_URL: ${{ inputs.webhook_url }}
+        MESSAGE: ${{ inputs.message }}
