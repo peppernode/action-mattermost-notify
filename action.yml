@@ -1,5 +1,5 @@
-name: "Mattermost Notification by bash"
-description: "Simple and fast mattermost notifier"
+name: "Fast Mattermost Notifications"
+description: "Simple and fast mattermost notifier (running on bash)"
 branding:
   icon: "message-circle"
   color: "green"
