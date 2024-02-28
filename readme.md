@@ -17,7 +17,7 @@ jobs:
     
     steps:
       - name: Send notification to mattermost
-        uses: peppernode/action-mattermost-notify@v0.1.0
+        uses: peppernode/action-mattermost-notify@v0.1.1
         with:
           webhook_url: ${{ secrets.MATTERMOST_WEBHOOK_URL }}
           message: "My message to send to mattermost :tada:"
