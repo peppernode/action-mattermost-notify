@@ -1,5 +1,8 @@
 name: "Mattermost Notification by bash"
 description: "Simple and fast mattermost notifier"
+branding:
+  icon: "message-circle"
+  color: "green"
 inputs:
   webhook_url:
     description: "Mattermost webhook url"
