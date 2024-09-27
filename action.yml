@@ -25,3 +25,5 @@ runs:
       env:
         WEBHOOK_URL: ${{ inputs.webhook_url }}
         MESSAGE: ${{ inputs.message }}
+        CHANNEL: ${{ inputs.channel }}
+        USERNAME: ${{ inputs.username }}
