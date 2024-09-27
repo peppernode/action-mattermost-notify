@@ -10,6 +10,12 @@ inputs:
   message:
     description: "Text that you want to send"
     required: true
+  channel:
+    description: "Channel to send the message"
+    required: false
+  username:
+    description: "Username from which the message will be sent"
+    required: false
 runs:
   using: "composite"
   steps:
@@ -19,3 +25,5 @@ runs:
       env:
         WEBHOOK_URL: ${{ inputs.webhook_url }}
         MESSAGE: ${{ inputs.message }}
+        CHANNEL: ${{ inputs.channel }}
+        USERNAME: ${{ inputs.username }}
